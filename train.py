@@ -37,7 +37,7 @@ if __name__ == "__main__":
         raw_data = [input()]
 
     data = tuple(extract_tokens(''.join(raw_data)))
-    model = NGramModel(3)
+    model = NGramModel(2)
     model.fit(data)
 
     with open(args.model_path, 'wb') as file:
